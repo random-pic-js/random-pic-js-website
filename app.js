@@ -2,7 +2,6 @@ const path = require('path'),
   express = require("express"),
   expressIp = require('express-ip'),
   compression = require("compression"),
-  cookieParser = require('cookie-parser'),
   websiteRouter = require('./routes/website.routing'),
 
   app = express();
@@ -17,7 +16,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(express.json({ limit: '10kb' }));
-app.use(cookieParser());
 
 app.use(compression());
 app.use(expressIp().getIpInfoMiddleware);
