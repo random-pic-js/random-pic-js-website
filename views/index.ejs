@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Metas -->
+      <meta charset="utf-8">
+      <meta name="theme-color" content="#0075d5">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta name="Classification" content="Image" />
+      <meta name="subject" content="Find your random image in random-pic.js" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta name="theme-color" content="#0075d5" />
+      <meta name="twitter:card" value="summary" />
+      <meta name="twitter:title" content="random-pic.js" />
+      <meta name="twitter:description" content="Find your random image in random-pic.js" />
+      <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/760100408453627904/893881988841373786/rpjsLogo.png" />
+      <meta property="og:title" content="Paraffin" />
+      <meta property="og:description" content="Find your random image in random-pic.js" />
+      <meta property="og:image" content="https://cdn.discordapp.com/attachments/760100408453627904/893881988841373786/rpjsLogo.png" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="description" content="Find your random image in random-pic.js" />
+      <meta name="keywords" content="" />
+      <meta name="author" content="random-pic.js" />
+      <title>random-pic.js - Find your random image in random-pic.js</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Css -->
+      <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.discordapp.com/attachments/760100408453627904/893881988841373786/rpjsLogo.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.discordapp.com/attachments/760100408453627904/893881988841373786/rpjsLogo.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.discordapp.com/attachments/760100408453627904/893881988841373786/rpjsLogo.png">
+      <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="/css/main.css" rel="stylesheet" type="text/css" media="all"/>
+      <link rel="stylesheet" href="/css/bootstrap-dropdownhover.min.css">
+      <link href="/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="/css/magnific-popup.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
+      <link rel="stylesheet" href="/css/code_highlighting-v3.css" />
+      <link href="fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Preloader -->
+      <div class="loader">
+         <!-- Preloader inner -->
+         <div class="loader-inner">
+            <svg width="120" height="220" viewbox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
+               <circle class="spinner" cx="50" cy="50" r="21" fill="#ffffff" stroke-width="4"/>
+            </svg>
+         </div>
+         <!-- End preloader inner -->
+      </div>
+      <!-- End preloader-->
+      <!--Wrapper-->
+      <div class="wrapper">
+         <header class="header">
+            <div class="container ">
+               <div class="floating-nav mt-lg-5 ">
+                  <nav class="navbar navbar-expand-lg header-navbar ">
+                     <div class="navbar-brand">
+                        <a class=" navbar-brand navbar-logo" href="/">
+                           <img class="mb-0" src="/assets/favicon.png" alt="random-pic.js" width="40px">
+                        </a>
+                     </div>
+                     <button class="navbar-toggler btn-navbar-toggler" type="button" data-toggle="collapse" data-target=".nav-menu" aria-expanded="true" aria-label="Toggle navigation">
+                     <span class="fa fa-bars"></span>
+                     </button>
+                     <div class="nav-menu collapse navbar-collapse navbar-collapse justify-content-end py-0 ">
+                        <ul class=" navbar-nav  header-navbar-nav">
+                           <li><a class=" nav-link" href="index.ejs">Home</a></li>
+                           <li class="dropdown">
+                              <a href="javascript:;" class="nav-link dropdown-toggle"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Random<span class="dropdown-arrow ml-2">
+                              <span class="fa fa-angle-down dropdown-arrow-inner"></span></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" href="/random?type=animal">Animal</a></li>
+                                 <li><a class="dropdown-item" href="/random?type=anime">Anime</a></li>
+                                 <li><a class="dropdown-item" href="/random?type=boy">Boy</a></li>
+                                 <li><a class="dropdown-item" href="/random?type=girl">Girl</a></li>
+                                 <li><a class="dropdown-item" href="/random?type=e-boy">eBoy</a></li>
+                                 <li><a class="dropdown-item" href="/random?type=e-girl">eGirl</a></li>
+                                 <li><a class="dropdown-item" href="/random?type=couple">Couple</a></li>
+                                 <li><a class="dropdown-item" href="/random?type=landscape">Landscape</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </header>
+         <!--End header-->
+         <!--Hero section-->
+         <section class="hero" >
+            <div id="particles-js" class="background-img gradient-overlay gradient-overlay-dark"></div>
+            <div class="container height-70vh">
+               <div class="row justify-content-center text-center">
+                  <div class="col-12 col-md-10 col-lg-10">
+                     <h1 class="display-4 mb-3 text-white">All images related to the <span class="typed font-weight-600"></span></h1>
+                     <p class="lead mb-5 text-white">Find your random image in <br>random-pic.js</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--End hero section-->
+         <section  class="spacer-double-lg">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row justify-content-center">
+                  <div class="col ">
+                     <div class="mb-5  text-center">
+                        <h1>See yourself in random :)</h1>
+                        <p class="w-md-75 mb-0 mx-auto">You can easily upload your desired photo on the site so that your photo can be seen globally</p>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row justify-content-center text-center">
+                  <div class="col">
+                     <a class="btn btn-primary btn-wide mb-2 mb-md-0 mr-md-2" href="javascript:;">Coming soon...</a>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col">
+                     <div class="mb-5 pb-5 mt-5 pt-5">
+                        <hr>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-md-4 mb-4 mb-lg-0">
+                     <div class="text-center px-3">
+                        <img class="max-width-md mb-3" src="/assets/svg/startup-icon.svg" alt="">
+                        <h3 class="h5">Photo Quality</h3>
+                        <p class="mb-0">All high quality photos are recorded in our repository.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-4 mb-lg-0">
+                     <div class="text-center px-3">
+                        <img class="max-width-md mb-3" src="/assets/svg/idea-icon.svg" alt="">
+                        <h3 class="h5">Modern Photo</h3>
+                        <p class="mb-0 ">All our photos are suitable for use in completely modern brands and apps.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="text-center px-3">
+                        <img class="max-width-md mb-3" src="/assets/svg/target-icon.svg" alt="">
+                        <h3 class="h5 ">Real-Time Results</h3>
+                        <p class="mb-0  ">The connection between the api and our repository is completely real-time, which is updated daily.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </section>
+         <!--End section-->
+         <!--End hero section-->
+         <section  class="spacer-double-lg">
+            <!--Container-->
+            <div class="container">
+               <div class="center">
+                  <div>
+                     <h1 class="center">random-pic.js</h1>
+                     <a href="https://npmjs.com/random-pic.js" style="text-decoration: none;" target="_blank">
+                        <div class="center justify-content-between">
+                           <img src="https://img.shields.io/npm/dt/random-pic.js?maxAge=3600" alt="">
+                           <img src="https://img.shields.io/npm/v/random-pic.js?maxAge=3600" alt="">
+                        </div>
+                        <br>
+                        <div class="center">
+                           <img class="center" src="https://nodei.co/npm/random-pic.js.png?downloads=true&amp;stars=true" alt="" width="200px">
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <!--Row-->
+               <h2>Installation</h2>
+               <div class="one" dir="ltr">
+                  <small class="code-snippet-lang-label">javascript</small>
+                  <p class="copy-label click-to-copy">Click To Copy</p>
+                  <pre><code class='language-js click-to-copy' id='js-snippet'>
+   npm i random-pic.js
+                     </code>
+                  </pre>
+               </div>
+               <!--End row-->
+            </div>
+
+            <div class="container">
+               <!--Row-->
+               <h2>Use</h2>
+               <div class="one" dir="ltr">
+                  <small class="code-snippet-lang-label">javascript</small>
+                  <p class="copy-label click-to-copy">Click To Copy</p>
+                  <pre><code class='language-js click-to-copy' id='js-snippet'>
+   const pic = require("random-pic.js");
+
+   // do every thing with response
+   pic.animal().then((response) => { console.log(response) })
+   pic.anime().then((response) => { response })
+   pic.boy().then((response) => { response })
+   pic.girl().then((response) => { response })
+   pic.couple().then((response) => { response })
+   pic.eboy().then((response) => { response })
+   pic.egirl().then((response) => { response })
+   pic.landscape().then((response) => { response })
+   pic.random().then((response) => { response })
+
+
+
+   // using for Discord Bot ?!
+   pic.random().then((response) =>
+   {
+       message.channel.send(response)
+   })
+                     </code>
+                  </pre>
+               </div>
+               <!--End row-->
+            </div>
+
+            <div class="container">
+               <!--Row-->
+               <h2>Output</h2>
+               <div class="one" dir="ltr">
+                  <small class="code-snippet-lang-label">javascript</small>
+                  <p class="copy-label click-to-copy">Click To Copy</p>
+                  <pre><code class='language-js click-to-copy' id='js-snippet'>
+   'https://i.pinimg.com/236x/56/37/d7/5637d7e673de28ac702c6c628bbd08c7.jpg'
+                     </code>
+                  </pre>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </section>
+         <!--End section-->
+         <!--Section-->
+         <div class="align-content-center justify-content-center display-flex">
+            <section class="onTop--of-footer spacer-double-xxs text-center bg-azure">
+            <!--Container-->
+            <div class="container">
+               <!--row-->
+               <div class="row">
+                  <div class="col">
+                     <span class="mr-2 text-white"><span class=" fab fa-discord mr-2"></span>If you need any support you can join our </span>
+                     <a href="https://discord.gg/4zY83B9GnZ" class="text-white font-size-15 font-weight-500">Discord Server ›</a>
+                  </div>
+               </div>
+               <!--end of row-->
+            </div>
+            <!--end of container-->
+         </section>
+         </div>
+         <!--End section-->
+         <!--Footer-->
+         <div class="footer-parent">
+            <footer class="bg-dark spacer-double-md">
+               <!--Container-->
+               <div class="container">
+                  <!--row-->
+                  <div class="row justify-content-between">
+                     <div class="col-lg-4 d-flex align-items-start flex-column">
+                        <a class="d-inline-block mb-4"><h3 class="color-white font-weight-bold">random-pic.js</h3></a>
+                        <p class="font-size-12 text-light">&copy; 2021 all rights reserved - random-pic.js. <br>A product of <a target="_follow" href="https://hadi-az.ir/">hadi.az</a> & <a target="_follow" href="https://parsa-firoozi.ir/">im-parsa</a>.</p>
+                     </div>
+                     <div class="col-6 col-md-4 col-lg-2 mb-0">
+                        <h3 class="h6 text-white mb-3 font-weight-600">Random</h3>
+                        <div class="list-group list-group-flush">
+                           <a class="list-group-item list-group-item-action" href="/random?type=animal">Animal</a>
+                           <a class="list-group-item list-group-item-action" href="/random?type=anime">Anime</a>
+                           <a class="list-group-item list-group-item-action" href="/random?type=couple">Couple</a>
+                           <a class="list-group-item list-group-item-action" href="/random?type=landscape">Landscape</a>
+                        </div>
+                     </div>
+                     <div class="col-6 col-md-4 col-lg-2 mb-0">
+                        <h3 class="h6 text-white mb-3 font-weight-600">Random ( part 2 )</h3>
+                        <div class="list-group list-group-flush">
+                           <a class="list-group-item list-group-item-action" href="/random?type=boy">Boy</a>
+                           <a class="list-group-item list-group-item-action" href="/random?type=girl">Girl</a>
+                           <a class="list-group-item list-group-item-action" href="/random?type=e-boy">eBoy</a>
+                           <a class="list-group-item list-group-item-action" href="/random?type=e-girl">eGirl</a>
+                        </div>
+                     </div>
+                     <div class="col-6 col-md-4 col-lg-3  mb-0">
+                        <h3 class="h6 text-white mb-3 font-weight-600">Social hubs</h3>
+                        <ul class="list-inline mb-0">
+                           <li class="list-inline-item mr-1"><a class="social-icon" href="https://discord.gg/4zY83B9GnZ"><span class="fab fa-discord"></span></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!--end of row-->
+               </div>
+               <!--end of container-->
+            </footer>
+         </div>
+         <!--End footer-->
+         <!--To the top-->
+         <a class="scroll-to-top scroll" href="#wrapper"><span class=" fa fa-angle-up top-icon "></span></a>
+         <!-- End to the top -->
+      </div>
+      <!-- End wrapper-->
+      <!--Javascript-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+      <script src="/js/jquery-1.12.4.min.js" ></script>
+      <script src="/js/particles.js" ></script>
+      <script src="/js/bootstrap.min.js"></script>
+      <script src="/js/bootstrap-dropdownhover.min.js"></script>
+      <script src="/js/jquery.flexslider-min.js"></script>
+      <script src="/js/smooth-scroll.js" ></script>
+      <script src="/js/jquery.magnific-popup.min.js" ></script>
+      <script src="/js/jquery.countdown.min.js" ></script>
+      <script src="/js/typed.min.js"></script>
+      <script src="/js/typeanimation.js"></script>
+      <script src="/js/placeholders.min.js"></script>
+      <script src="/js/script.js"></script>
+   </body>
+</html>
+

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <!-- Metas -->
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#0075d5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Classification" content="Image" />
+  <meta name="subject" content="All random-pic.js images related to the <%- type %>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#0075d5" />
+  <meta name="twitter:card" value="summary" />
+  <meta name="twitter:title" content="random-pic.js" />
+  <meta name="twitter:description" content="All random-pic.js images related to the <%- type %>" />
+  <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/760100408453627904/893881988841373786/rpjsLogo.png" />
+  <meta property="og:title" content="Paraffin" />
+  <meta property="og:description" content="All random-pic.js images related to the <%- type %>" />
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/760100408453627904/893881988841373786/rpjsLogo.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="All random-pic.js images related to the <%- type %>" />
+  <meta name="keywords" content="All random-pic.js images related to the <%- type %>" />
+  <meta name="author" content="random-pic.js" />
+  <meta name="description" content="All random-pic.js images related to the <%- type %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Css -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.discordapp.com/attachments/760100408453627904/893881988841373786/rpjsLogo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.discordapp.com/attachments/760100408453627904/893881988841373786/rpjsLogo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.discordapp.com/attachments/760100408453627904/893881988841373786/rpjsLogo.png">
+  <title>random-pic.js - All images related to the <%- type %></title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/fdbc6c58ce.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="sidebar">
+  <div class="logo-details">
+    <div class="logo_name">random-pic.js</div>
+    <i class='bi-list' id="btn"></i>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <a <% if(type === "home") { %> class="active" <% } %> href="?view=home">
+        <i class="fas fa-home"></i>
+        <span class="links_name">Home</span>
+      </a>
+      <span class="tooltip">Home</span>
+    </li>
+    <li>
+      <a <% if(type === "random") { %> class="active" <% } %> href="?type=random">
+        <i class="fas fa-shuffle"></i>
+        <span class="links_name">Random</span>
+      </a>
+      <span class="tooltip">Random</span>
+    </li>
+    <li>
+      <a <% if(type === "animal") { %> class="active" <% } %> href="?type=animal">
+        <i class="fas fa-paw"></i>
+        <span class="links_name">Animal</span>
+      </a>
+      <span class="tooltip">Animal</span>
+    </li>
+    <li>
+      <a <% if(type === "anime") { %> class="active" <% } %> href="?type=anime">
+        <i class="fas fa-film"></i>
+        <span class="links_name">Anime</span>
+      </a>
+      <span class="tooltip">Anime</span>
+    </li>
+    <li>
+      <a <% if(type === "girl") { %> class="active" <% } %> href="?type=girl">
+        <i class="fas fa-grin-stars"></i>
+        <span class="links_name">Girl</span>
+      </a>
+      <span class="tooltip">Girl</span>
+    </li>
+    <li>
+      <a <% if(type === "boy") { %> class="active" <% } %> href="?type=boy">
+        <i class="fas fa-grin"></i>
+        <span class="links_name">Boy</span>
+      </a>
+      <span class="tooltip">Boy</span>
+    </li>
+    <li>
+      <a <% if(type === "e-boy") { %> class="active" <% } %> href="?type=e-boy">
+        <i class="fas fa-grin-tongue-squint"></i>
+        <span class="links_name">eBoy</span>
+      </a>
+      <span class="tooltip">eBoy</span>
+    </li>
+    <li>
+      <a <% if(type === "e-girl") { %> class="active" <% } %> href="?type=e-girl">
+        <i class="fas fa-grin-stars"></i>
+        <span class="links_name">eGirl</span>
+      </a>
+      <span class="tooltip">eGirl</span>
+    </li>
+    <li>
+      <a <% if(type === "couple") { %> class="active" <% } %> href="?type=couple">
+        <i class="fas fa-grin-hearts"></i>
+        <span class="links_name">Couple</span>
+      </a>
+      <span class="tooltip">Couple</span>
+    </li>
+    <li>
+      <a <% if(type === "landscape") { %> class="active" <% } %> href="?type=landscape">
+        <i class="fas fa-image"></i>
+        <span class="links_name">Landscape</span>
+      </a>
+      <span class="tooltip">Landscape</span>
+    </li>
+  </ul>
+</div>
+<header class="header">
+  <div class="header__branding center">
+    <img src="/assets/favicon-white.png" alt="random-pic.js--white" width="100px">
+  </div>
+  <br /><br />
+  <nav class="header__menu">
+    <ul>
+      <div class="header__menuItem">
+        <a href="/">
+          <i class="header__menuItemIcon fas fa-home"></i>
+          <li class="header__menuItemLabel">Home</li>
+        </a>
+      </div>
+      <br />
+      <a href="?type=random" class="header__menuItem <% if (type === 'random') { %> active <% } %>">
+        <i class="header__menuItemIcon fas fa-shuffle"></i>
+        <li class="header__menuItemLabel">Random</li>
+      </a>
+      <a href="?type=animal" class="header__menuItem <% if (type === 'animal') { %> active <% } %>">
+        <i class="header__menuItemIcon fas fa-paw"></i>
+        <li class="header__menuItemLabel">Animal</li>
+      </a>
+      <a href="?type=anime" class="header__menuItem <% if (type === 'anime') { %> active <% } %>">
+        <i class="header__menuItemIcon fas fa-film"></i>
+        <li class="header__menuItemLabel">Anime</li>
+      </a>
+      <a href="?type=boy" class="header__menuItem <% if (type === 'boy') { %> active <% } %>">
+        <i class="header__menuItemIcon fas fa-grin"></i>
+        <li class="header__menuItemLabel">Boy</li>
+      </a>
+      <a href="?type=girl" class="header__menuItem <% if (type === 'girl') { %> active <% } %>">
+        <i class="header__menuItemIcon fas fa-grin-stars"></i>
+        <li class="header__menuItemLabel">Girl</li>
+      </a>
+      <a href="?type=e-boy" class="header__menuItem <% if (type === 'e-boy') { %> active <% } %>">
+        <i class="header__menuItemIcon fas fa-grin-tongue-squint"></i>
+        <li class="header__menuItemLabel">eBoy</li>
+      </a>
+      <a href="?type=e-girl" class="header__menuItem <% if (type === 'e-girl') { %> active <% } %>">
+        <i class="header__menuItemIcon fas fa-grin-tongue-wink"></i>
+        <li class="header__menuItemLabel">eGirl</li>
+      </a>
+      <a href="?type=couple" class="header__menuItem <% if (type === 'couple') { %> active <% } %>">
+        <i class="header__menuItemIcon fas fa-grin-hearts"></i>
+        <li class="header__menuItemLabel">Couple</li>
+      </a>
+      <a href="?type=landscape" class="header__menuItem <% if (type === 'landscape') { %> active <% } %>">
+        <i class="header__menuItemIcon fas fa-image"></i>
+        <li class="header__menuItemLabel">Landscape</li>
+      </a>
+    </ul>
+  </nav>
+</header>
+<main class="main">
+  <header>
+    <h1>All random-pic.js images related to the <a href="/"><%- type %></a></h1>
+    <p>Let us know if you have an idea or problem with our brand</p>
+  </header>
+  <div class="table">
+    <% let arrayNumber = 0;%>
+    <% pics.forEach(function(pic) { %>
+      <article class="card card_hidden move__to--top" id="card-0">
+        <div>
+          <div class="center">
+            <div class="card__image"  style="background-image: url(<%= pic %>);"></div>
+          </div>
+          <div class="card__choice">
+            <a href="<%= pic %>" target="_blank"><button><i class="bi bi-link-45deg"></i></button></a>
+          </div>
+        </div>
+      </article>
+      <% arrayNumber = ++arrayNumber;%>
+    <% }) %>
+
+
+  </div>
+</main>
+<!-- partial -->
+<script src="js/random-script.js"></script>
+
+</body>
+</html>
