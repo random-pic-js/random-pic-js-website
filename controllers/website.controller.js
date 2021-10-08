@@ -29,8 +29,8 @@ exports.random = async (req, res) =>
         type !== 'boy' &&
         type !== 'girl' &&
         type !== 'anime' &&
-        type !== 'e-boy' &&
-        type !== 'e-girl' &&
+        type !== 'eboy' &&
+        type !== 'egirl' &&
         type !== 'animal' &&
         type !== 'couple' &&
         type !== 'landscape'
